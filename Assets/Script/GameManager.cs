@@ -40,12 +40,14 @@ public class GameManager : MonoBehaviour
         if (wallID == "Kiri")
         {
             PlayerScoreR = PlayerScoreR + 1; 
-            txtPlayerScoreR.text = PlayerScoreR.ToString(); 
+            txtPlayerScoreR.text = PlayerScoreR.ToString();
+            ScoreCheck();
         }
         else
         {
             PlayerScoreL = PlayerScoreL + 1;
             txtPlayerScoreL.text = PlayerScoreL.ToString();
+            ScoreCheck();
 
         }
     }
